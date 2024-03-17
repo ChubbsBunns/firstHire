@@ -1,0 +1,58 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-firsthire-dev-190419-authRole",
+      "UnauthRoleArn": "arn:aws:iam::335704812938:role/amplify-firsthire-dev-190419-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::335704812938:role/amplify-firsthire-dev-190419-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-firsthire-dev-190419-deployment",
+      "UnauthRoleName": "amplify-firsthire-dev-190419-unauthRole",
+      "StackName": "amplify-firsthire-dev-190419",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:335704812938:stack/amplify-firsthire-dev-190419/1ab314f0-e44e-11ee-9a18-06a39cbb20c1",
+      "AmplifyAppId": "d1124jqfwa4wam"
+    }
+  },
+  "auth": {
+    "firsthire81956617": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-firsthire-dev-190419-deployment/amplify-cfn-templates/auth/firsthire81956617-cloudformation-template.json",
+        "logicalId": "authfirsthire81956617"
+      },
+      "lastPushTimeStamp": "2024-03-17T11:13:06.192Z",
+      "output": {
+        "UserPoolId": "ap-southeast-1_NZriLXmFU",
+        "AppClientIDWeb": "6c1dniqoggidcge4nucssbhura",
+        "AppClientID": "4m0oc3481b0r745ftgkuqsj42b",
+        "IdentityPoolId": "ap-southeast-1:298e970e-ad16-43c2-ae65-afedf985429f",
+        "UserPoolArn": "arn:aws:cognito-idp:ap-southeast-1:335704812938:userpool/ap-southeast-1_NZriLXmFU",
+        "IdentityPoolName": "firsthire81956617_identitypool_81956617__dev",
+        "UserPoolName": "firsthire81956617_userpool_81956617"
+      },
+      "lastPushDirHash": "oF6FVWA8OPzjjqsqCXInJ0tf9H0="
+    }
+  }
+}
